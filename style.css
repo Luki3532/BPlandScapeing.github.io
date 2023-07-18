@@ -1,0 +1,86 @@
+body {
+  /* Enable the line under to enable differnt font */
+  /* font-family: Arial, sans-serif; */
+  background-color: #eaece9;
+  text-align: center;
+}
+
+h1 {
+  color: #333333;
+  font-size: 6vw;
+  font-weight: bold;
+}
+
+h2 {
+  color: #333333;
+  font-size: 5vw;
+  font-weight: lighter;
+}
+
+p {
+  color: #666666;
+  font-size: 2vw;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 30px; */
+  padding: 1vw;
+}
+
+.photo_header {
+  /* display: none; */
+
+  width: 50%;
+  height: auto;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+}
+
+#headerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  background-color: #d7e7cb;
+  height: 35vw;
+  z-index: -1;
+}
+
+.content {
+  margin: 5vw 1.5vw;
+}
+
+#contactCard_On_LineDisplayContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  color: blue;
+}
+
+.description {
+  color: #595b5c;
+  font-size: 2.3vw;
+  font-weight: bold;
+}
+#phoneInfoContainer{
+  display: flex;
+}
+.phoneNumber{
+  color: #333333 ;
+}
+
+#footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  background-color: #79b14f ;
+}

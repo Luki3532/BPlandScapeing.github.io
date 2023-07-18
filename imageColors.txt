@@ -1,0 +1,20 @@
+Business Card:
+
+62.5 %  #7c7c7d     Grey
+17.7 %  #6c9351     Green
+7.3 %   #efefef     White
+7.0 %   #8ca679     Green
+3.2 %   #c3c3c4     Grey
+1.8 %   #71a44b     Green
+0.5 %   #9d7d61     Brown
+
+Trasnparent LOGO
+42.4 %  #595b5c Grey
+29.0 %  #79b14f Green
+10.0 %  #9f9fa1 Grey
+5.2 %   #eaece9 Grey
+2.9 %   #a2c985 Green
+2.9 %   #b38661 Brown
+2.8 %   #bdd9a9 Green
+2.8 %   #d7e7cb Grey
+2.0     %#cdb097    Grey

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +9,27 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
+
+  <script>
+  function seeMore() {
+    document.getElementsByClassName("seeMoreButton")[0].style.display =
+      "none";
+    document.getElementsByClassName("seeLessButton")[0].style.display =
+      "inline";
+    document.getElementById("section_two").style.display = "inline";
+    document.getElementById("section_three").style.display = "inline";
+
+  }
+  function seeLess() {
+    document.getElementsByClassName("seeMoreButton")[0].style.display =
+      "inline";
+    document.getElementsByClassName("seeLessButton")[0].style.display =
+      "none";
+    document.getElementById("section_two").style.display = "none";
+    document.getElementById("section_three").style.display = "none";
+
+  }
+</script>
 
   <body>
     <div id="headerBox">
@@ -38,17 +60,12 @@
           </div>
           <p>
             Email:
-            <a href="mailto:bpowell@bplandscapinginc.com"
-              >bpowell@bplandscapinginc.com</a
-            >
+            <a href="mailto:bpowell@bplandscapinginc.com">bpowell@bplandscapinginc.com</a>
           </p>
           <div id="contactCard_On_LineDisplayContainer">
             <p>Download:&nbsp;</p>
-            <a
-              href="photos\BP Landscaping BC.jpg"
-              alt="Download Contact_Card.jpg"
-              download
-            >
+            <a href="photos\BP Landscaping BC.jpg"
+              alt="Download Contact_Card.jpg" download>
               <p class="link">Digital Contact Card</p>
             </a>
           </div>
@@ -56,6 +73,56 @@
       </div>
     </div>
 
+    <div id="section_two">
 
+      <div class="title">
+        <h3>
+          <h2>Check Out Our Work</h2>
+        </h3>
+        <div class="description">Non-Stop Learning and Improving</div>
+      </div>
+      <div id="photoContent" class="content">
+        <div id="photoSection1" class="photoSectionContainer">
+          <img src="photos\retouch_2023070720444632.jpg" alt />
+          <img src="photos\retouch_2023070720444959.jpg" alt />
+        </div>
+        <div id="photoSection2" class="photoSectionContainer">
+          <img src="photos\retouch_2023070720444632.jpg" alt />
+          <img src="photos\retouch_2023070720445873.jpg" alt />
+        </div>
+        <div id="photoSection3" class="photoSectionContainerFull">
+          <img src="photos\retouch_2023070720444632.jpg" alt />
+
+        </div>
+
+
+      </div>
+      <div>See More Photos Button Here</div>
+
+    </div>
+
+    <div id="section_three">
+      <div class="title">
+        <h3>
+          <h2>New Section Here</h2>
+        </h3>
+        <div class="description">We Love what we do.</div>
+      </div>
+ 
+    </div>
+
+    <!-- CODE FOOTER -->
+    <button type="button" class="seeMoreButton" onclick="seeMore()">
+      see more
+    </button>
+    <button type="button" class="seeLessButton" onclick="seeLess()">
+      see less
+    </button>
+
+    <script>
+    // auto See More
+    seeMore();
+  </script>
   </body>
+
 </html>

@@ -33,7 +33,7 @@
 
   <body>
     <div id="headerBox">
-      <img class="logo" src="BP Landscaping Grey Text Logo.png" alt />
+      <img class="logo" src="photos\BP Landscaping Grey Text Logo.png" alt />
     </div>
 
     <!-- <div id="index_header">
@@ -41,7 +41,7 @@
 
     </div> -->
 
-    <div id="section_one">
+    <div class="section" id="section_one">
       <div class="title">
         <h2>
           Welcome to
@@ -73,7 +73,7 @@
       </div>
     </div>
 
-    <div id="section_two">
+    <div class="section" id="section_two">
 
       <div class="title">
         <h3>
@@ -97,32 +97,27 @@
 
 
       </div>
-      <div>See More Photos Button Here</div>
+      <button id="seeMorePhotosButton">see more photos</button>
 
     </div>
-
+<!-- 
     <div id="section_three">
-      <div class="title">
-        <h3>
-          <h2>New Section Here</h2>
-        </h3>
         <div class="description">We Love what we do.</div>
-      </div>
  
-    </div>
+    </div> -->
 
     <!-- CODE FOOTER -->
-    <button type="button" class="seeMoreButton" onclick="seeMore()">
+    <button type="button" class="seeMoreButton pageChangeElement" onclick="seeMore()">
       see more
     </button>
-    <button type="button" class="seeLessButton" onclick="seeLess()">
+    <button type="button" class="seeLessButton pageChangeElement" onclick="seeLess()">
       see less
     </button>
 
-    <script>
+    <!-- <script>
     // auto See More
     seeMore();
-  </script>
+  </script> -->
   </body>
 
 </html>

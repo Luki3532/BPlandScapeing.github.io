@@ -1,0 +1,24 @@
+@media(max-width: 500px) {
+    .section{
+        margin-bottom: 5vw;
+        padding-bottom: 5vw;
+    }
+    .largeMobile {
+        height: auto;
+        width: 75%;
+        margin-bottom: 2.5vw;
+        border: 1vw solid #33333364;
+
+    }
+}
+.section{
+    margin-bottom: 5vw;
+    padding-bottom: 5vw;
+}
+.largeMobile {
+    height: auto;
+    width: 75%;
+    margin-bottom: 2.5vw;
+    border: 1vw solid #33333364;
+
+}

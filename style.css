@@ -172,3 +172,38 @@ button{
 
   }
 }
+@media(max-width: 500px){
+  .contact-info{
+    flex-direction: column;
+  }
+  #phoneInfoContainer{
+    justify-content: center;
+  }
+
+  .description{
+    font-size: 3vw;
+  }
+  h1{
+    font-size: 6vw;
+  }
+  h2{
+    font-size: 5vw;
+  }
+  p{
+    font-size: 2.80vw;
+  }
+  .section{
+    margin: 0% 2%;
+    /* display: none; */
+  }
+
+  
+  .logo {
+    width: 75%;
+    height: auto;
+  }
+  #headerBox {
+    height: 49vw;
+  }
+
+  }

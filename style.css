@@ -74,6 +74,10 @@ p {
   color: blue;
 }
 
+.title {
+  padding-top: 1.125%;
+}
+
 .description {
   color: #595b5c;
   font-size: 2.3vw;
@@ -162,15 +166,30 @@ button{
   }
   button{
     font-size: 2vw;
-
   }
 
 }
 @media(min-width: 900px){
-  button{
+  .description{
     font-size: 1.5vw;
+  }
+  h1{
+    font-size: 3vw;
+  }
+  h2{
+    font-size: 2.5vw;
+  }
+  p{
+    font-size: 1.3vw;
+  }
+  .section{
+    margin: 0% 15%;
+  }
+  button{
+    font-size: 1.3vw;
 
   }
+
 }
 @media(max-width: 500px){
   .contact-info{
@@ -206,4 +225,10 @@ button{
     height: 49vw;
   }
 
+  }
+  @media(min-width: 1000px){
+    .section{
+      margin: 0% 15%;
+    }
+  
   }

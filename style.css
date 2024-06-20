@@ -1,5 +1,5 @@
 body {
-  /* Enable the line under to enable differnt font */
+  /* Enable the line under to enable different font */
   /* font-family: Arial, sans-serif; */
   background-color: #eaece9;
   text-align: center;
@@ -9,7 +9,6 @@ h1 {
   color: #333333;
   font-size: 6vw;
   font-weight: bold;
-
 }
 
 h2 {
@@ -17,11 +16,13 @@ h2 {
   font-size: 5vw;
   font-weight: lighter;
 }
+
 h3 {
   color: #333333;
   font-size: 4vw;
   font-weight: lighter;
 }
+
 p {
   color: #666666;
   font-size: 2vw;
@@ -30,15 +31,12 @@ p {
 .contact-info {
   display: flex;
   justify-content: space-between;
-  /* margin-top: 30px; */
   padding: 1vw;
   font-family: Arial, sans-serif;
 
 }
 
 .photo_header {
-  /* display: none; */
-
   width: 50%;
   height: auto;
 }
@@ -46,6 +44,7 @@ p {
 .logo {
   width: 50%;
   height: auto;
+  opacity: .99;
 }
 
 #headerBox {
@@ -85,9 +84,11 @@ p {
   font-family: Arial, sans-serif;
 
 }
+
 #phoneInfoContainer{
   display: flex;
 }
+
 .phoneNumber{
   color: #333333 ;
 }
@@ -96,101 +97,58 @@ p {
   box-shadow: 0px 5px 20px rgb(221, 218, 218);
 
 }
+
 button{
   background-color: transparent;
   border: transparent;
   text-decoration: underline;
   position:static;
   font-size: 2.6vw;
-
-
 }
+
 .pageChangeElement{
   margin: 5vw 0px;
 }
+
 .seeLessButton{
   display: none;
 }
+
 #section_two{
   display: none;
 }
+
 #section_three .description{
   margin-top: 3vw;
 }
+
 .photoSectionContainer{
   display: flex;
   justify-content: space-evenly;
 }
+
 .photoSectionContainer img{
   width: 45%;
   height: auto;
   border: .75vw solid #33333325;
   margin: 1.5vw 0%;
 }
+
 .photoSectionContainerFull img{
   width: 86.2%;
   height: auto;
   border: .75vw solid #33333342;
-
-  /* padding: 0% 1.5vw; */
 }
+
 #photoSection1{
-  /* background-color: #333333; */
-/* border: .125vw solid ; */
-  
+
 }
+
 #photoContent{
-  /* box-shadow: inset 5px 6px 5px rgb(173, 173, 173); */
-  /* padding: 4vw 0px; */
-}
-
-
-/* DeskTop */
-@media(min-width: 600px) {
-
-  .description{
-    font-size: 1.8vw;
-  }
-  h1{
-    font-size: 3.5vw;
-  }
-  h2{
-    font-size: 3vw;
-  }
-  p{
-    font-size: 1.5vw;
-  }
-  .section{
-    margin: 0% 10%;
-    /* display: none; */
-  }
-  button{
-    font-size: 2vw;
-  }
 
 }
-@media(min-width: 900px){
-  .description{
-    font-size: 1.5vw;
-  }
-  h1{
-    font-size: 3vw;
-  }
-  h2{
-    font-size: 2.5vw;
-  }
-  p{
-    font-size: 1.3vw;
-  }
-  .section{
-    margin: 0% 15%;
-  }
-  button{
-    font-size: 1.3vw;
 
-  }
-
-}
+/* SMALLEST SCREEN SIZE SCALE 1 */
 @media(max-width: 500px){
   .contact-info{
     flex-direction: column;
@@ -216,7 +174,6 @@ button{
     /* display: none; */
   }
 
-  
   .logo {
     width: 75%;
     height: auto;
@@ -226,9 +183,94 @@ button{
   }
 
   }
-  @media(min-width: 1000px){
+/* DeskTop, SCALE 1.1*/
+@media(min-width: 600px) {
+
+  .description{
+    font-size: 1.8vw;
+  }
+  h1{
+    font-size: 3.5vw;
+  }
+  h2{
+    font-size: 3vw;
+  }
+  p{
+    font-size: 1.5vw;
+  }
+  .section{
+    margin: 0% 10%;
+    /* display: none; */
+  }
+  button{
+    font-size: 2vw;
+  }
+
+}
+/* DeskTop, SCALE 1.4 */
+@media(min-width: 900px){
+  .description{
+    font-size: 1.5vw;
+  }
+  h1{
+    font-size: 3vw;
+  }
+  h2{
+    font-size: 2.5vw;
+  }
+  p{
+    font-size: 1.3vw;
+  }
+  .section{
+    margin: 0% 15%;
+  }
+  button{
+    font-size: 1.3vw;
+
+  }
+
+}
+
+/* Wide Screen MAX WIDTH 2 */
+@media(min-width: 1120px){
+
+    body{
+      margin: 0% 10%;
+    }
+
+    #headerBox{
+      height: 15.5vw;
+    }
+
+    .logo{
+      height: clamp(14vw, 2vw, 10px);
+      width: auto;
+    }
+
     .section{
       margin: 0% 15%;
     }
+    .description{
+      font-size: 1vw;
+    }
+    h1{
+      margin-top: 0%;
+      font-size: 3vw;
+    }
+    h2{
+      font-size: 2vw;
+    }
+    p{
+      font-size: 1.05vw;
+    }
+    button{
+      font-size: 1.3vw;
   
-  }
+    }
+    .content{
+      margin-top: 2%;
+    }
+    .contact-info {
+      margin: 0% 1.125vw;
+    }
+}

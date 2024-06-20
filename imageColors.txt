@@ -8,7 +8,7 @@ Business Card:
 1.8 %   #71a44b     Green
 0.5 %   #9d7d61     Brown
 
-Trasnparent LOGO
+Transparent LOGO
 42.4 %  #595b5c Grey
 29.0 %  #79b14f Green
 10.0 %  #9f9fa1 Grey

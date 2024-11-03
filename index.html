@@ -10,37 +10,29 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- TAB ICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="favicon\apple-touch-icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
     <!-- TAB ICON END -->
   </head>
 
   <script>
-  function seeMore() {
-    document.getElementsByClassName("seeMoreButton")[0].style.display =
-      "none";
-    document.getElementsByClassName("seeLessButton")[0].style.display =
-      "inline";
-    document.getElementById("section_two").style.display = "inline";
-    document.getElementById("section_three").style.display = "inline";
-
-  }
-  function seeLess() {
-    document.getElementsByClassName("seeMoreButton")[0].style.display =
-      "inline";
-    document.getElementsByClassName("seeLessButton")[0].style.display =
-      "none";
-    document.getElementById("section_two").style.display = "none";
-    document.getElementById("section_three").style.display = "none";
-
-  }
-</script>
-
+    function toggleSections(show) {
+      const seeMoreButton = document.getElementsByClassName("seeMoreButton")[0];
+      const seeLessButton = document.getElementsByClassName("seeLessButton")[0];
+      const sectionTwo = document.getElementById("section_two");
+      const sectionThree = document.getElementById("section_three");
+  
+      seeMoreButton.style.display = show ? "none" : "inline";
+      seeLessButton.style.display = show ? "inline" : "none";
+      sectionTwo.style.display = show ? "inline" : "none";
+      sectionThree.style.display = show ? "inline" : "none";
+    }
+  </script>
   <body>
     <div id="headerBox">
       <img class="logo" src="BP Landscaping Grey Text Logo.png" alt />
@@ -58,7 +50,7 @@
           <h1>BP LANDSCAPING INC.</h1>
         </h2>
         <div class="description">
-          Providing exceptional landscaping services that fit for you.
+          Providing exceptional landscaping services that fit for you
         </div>
       </div>
       <div class="content">
@@ -116,10 +108,10 @@
     </div> -->
 
     <!-- CODE FOOTER -->
-    <button type="button" class="seeMoreButton pageChangeElement" onclick="seeMore()">
+    <button type="button" class="seeMoreButton pageChangeElement" onclick="toggleSections(true)">
       see more
     </button>
-    <button type="button" class="seeLessButton pageChangeElement" onclick="seeLess()">
+    <button type="button" class="seeLessButton pageChangeElement" onclick="toggleSections(false)">
       see less
     </button>
 

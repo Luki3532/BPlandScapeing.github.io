@@ -1,0 +1,299 @@
+body {
+    /* Enable the line under to enable different font */
+    /* font-family: Arial, sans-serif; */
+    background-color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+h2 {
+    color: #333333;
+    font-size: 5vw;
+    font-weight: lighter;
+}
+
+h3 {
+    color: #333333;
+    font-size: 4vw;
+    font-weight: lighter;
+}
+
+p {
+    color: #666666;
+    font-size: 2vw;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+    font-family: Arial, sans-serif;
+
+}
+
+.photo_header {
+    width: 50%;
+    height: auto;
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+    opacity: .99;
+}
+
+#headerBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    background-color: #d7e7cb;
+    height: 35vw;
+    z-index: -1;
+
+    box-shadow: 1px 10px 15px rgb(168, 166, 166);
+}
+
+.content {
+    margin: 5vw 1.5vw;
+}
+
+#contactCard_On_LineDisplayContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    color: blue;
+}
+
+.title {
+    padding-top: 1.125%;
+}
+
+.description {
+    color: #595b5c;
+    font-size: 2.3vw;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+}
+
+#phoneInfoContainer {
+    display: flex;
+}
+
+.phoneNumber {
+    color: #333333;
+}
+
+#section_one {
+    box-shadow: 0px 5px 20px rgb(221, 218, 218);
+
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    text-decoration: underline;
+    position: static;
+    font-size: 2.6vw;
+    cursor: pointer;  /* Pointer cursor on hover */
+}
+
+.pageChangeElement {
+    margin: 5vw 0px;
+}
+
+.seeLessButton {
+    display: none;
+}
+
+#section_two {
+    display: none;
+}
+
+#section_three .description {
+    margin-top: 3vw;
+}
+
+.photoSectionContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.photoSectionContainer img {
+    width: 45%;
+    height: auto;
+    border: .75vw solid #33333325;
+    margin: 1.5vw 0%;
+}
+
+.photoSectionContainerFull img {
+    width: 86.2%;
+    height: auto;
+    border: .75vw solid #33333342;
+}
+
+#photoSection1 {}
+
+#photoContent {}
+
+/* SMALLEST SCREEN SIZE SCALE 1 */
+@media(max-width: 500px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    #phoneInfoContainer {
+        justify-content: center;
+    }
+
+    .description {
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 2.80vw;
+    }
+
+    .section {
+        margin: 0% 2%;
+        /* display: none; */
+    }
+
+    .logo {
+        width: 75%;
+        height: auto;
+    }
+
+    #headerBox {
+        height: 49vw;
+    }
+
+}
+
+/* DeskTop, SCALE 1.1*/
+@media(min-width: 600px) {
+
+    .description {
+        font-size: 1.8vw;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
+    .section {
+        margin: 0% 10%;
+        /* display: none; */
+    }
+
+    button {
+        font-size: 2vw;
+    }
+
+}
+
+/* DeskTop, SCALE 1.4 */
+@media(min-width: 900px) {
+    .description {
+        font-size: 1.5vw;
+    }
+
+    h1 {
+        font-size: 3vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 1.3vw;
+    }
+
+    .section {
+        margin: 0% 15%;
+    }
+
+    button {
+        font-size: 1.3vw;
+
+    }
+
+}
+
+/* Wide Screen MAX WIDTH 2 */
+@media(min-width: 1120px) {
+
+    body {
+        margin: 0% 10%;
+        height: 100%;
+    }
+
+    #headerBox {
+        height: 15.5vw;
+    }
+
+    .logo {
+        height: clamp(14vw, 2vw, 10px);
+        width: auto;
+    }
+
+    .section {
+        margin: 0% 15%;
+    }
+
+    .description {
+        font-size: 11.5px;
+    }
+
+    h1 {
+        margin-top: 0%;
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 13px;
+        
+    }
+
+    .content {
+        margin-top: 2%;
+    }
+
+    .contact-info {
+        margin: 0% 1.125vw;
+    }
+}
